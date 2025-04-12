@@ -9,16 +9,16 @@ type Props = {
 
 const Header = ({ isDarkMode, setIsDarkMode }: Props) => {
   return (
-    <div className="w-full h-16 fixed top-5 left-0 z-50 bg-transparent flex justify-center">
-      <div className="w-[80%] h-full flex items-center justify-between bg-white/80 backdrop-blur-md dark:bg-[#090807]/80 shadow-md dark:shadow-black/20 rounded-2xl p-4">
-
-        <h1 className="text-[#0e0d0c] dark:text-[#ffd000]">Zwierzu</h1>
-        <button className="text-[#0e0d0c] dark:text-[#ffd000]">About</button>
-        <button className="text-[#0e0d0c] dark:text-[#ffd000]">Projects</button>
-
-        <button onClick={() => setIsDarkMode(!isDarkMode)} className="text-[#0e0d0c] dark:text-[#ffd000]">
-        {isDarkMode ? <Sun /> : <Moon />}
-        </button>
+    <div className="w-full h-10 fixed top-5 left-0 z-50 bg-transparent flex items-center justify-between">
+      <div className="w-1/2 max-w-120 h-full flex items-center justify-evenly">
+        <h1 className="text-[#0e0d0c] dark:text-[#ffd000] cursor-pointer">Zwierzu</h1>
+          <button className="text-[#0e0d0c] dark:text-[#ffd000] cursor-pointer">About</button>
+          <button className="text-[#0e0d0c] dark:text-[#ffd000] cursor-pointer">Projects</button>
+      </div>
+      <div className="w-[20%] h-full flex items-center justify-end">
+        <button onClick={() => setIsDarkMode(!isDarkMode)} className="text-[#0e0d0c] dark:text-[#ffd000] cursor-pointer">
+          {isDarkMode ? <Sun /> : <Moon />}
+          </button>
       </div>
     </div>
   );

@@ -8,3 +8,6 @@
   border: none;
   outline: none;
 }
+html, body {
+  transition: background-color 2s ease, color 2s ease;
+}
