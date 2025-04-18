@@ -9,13 +9,10 @@ type Props = {
 
 const Header = ({ isDarkMode, setIsDarkMode }: Props) => {
   return (
-    <div className="w-full h-10 fixed top-5 left-0 z-50 bg-transparent flex items-center justify-between">
-      <div className="w-1/2 max-w-120 h-full flex items-center justify-evenly">
-        <h1 className="text-[#0e0d0c] dark:text-[#ffd000] cursor-pointer">Zwierzu</h1>
-          <button className="text-[#0e0d0c] dark:text-[#ffd000] cursor-pointer">About</button>
-          <button className="text-[#0e0d0c] dark:text-[#ffd000] cursor-pointer">Projects</button>
+    <div className="w-full h-[9vh] bg-transparent flex items-center justify-between">
+      <div className="w-[1%] max-w-120 h-full flex items-center justify-center">
       </div>
-      <div className="w-[20%] h-full flex items-center justify-end">
+      <div className="w-[20%] max-w-30 h-full flex items-center justify-center">
         <button onClick={() => setIsDarkMode(!isDarkMode)} className="text-[#0e0d0c] dark:text-[#ffd000] cursor-pointer">
           {isDarkMode ? <Sun /> : <Moon />}
           </button>

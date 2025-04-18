@@ -11,7 +11,7 @@ export default function Home() {
   }, [IsDarkMode]);
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-start justify-center bg-[#f8f7f6] dark:bg-[#090807] pt-20">
+    <div className="w-full min-h-screen flex flex-col items-start justify-start bg-[#f8f7f6] dark:bg-[#090807]">
       <Header isDarkMode={IsDarkMode} setIsDarkMode={SetIsDarkMode} />
     </div>
   );
